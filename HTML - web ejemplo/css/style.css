@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+
+.hero {
+    /*
+        background-color: black;
+        background-image: url('../img/Fresh-Sea-Water-Hero.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    */
+    background: black url('../img/Fresh-Sea-Water-Hero.jpg') no-repeat center / cover;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.hero a {
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    /*
+        padding-left: 10px;
+        padding-right: 10px;
+    */
+    padding: 0 10px;
+    position: absolute;     /* element is out of the flow and positioned relative to it's position:relative container */
+    right: 10px;
+    bottom: 10px;
+}
+
+section {
+
+    /*
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+    */
+    padding: 50px 10px;
+
+    /*
+        border-width: 1px;
+        border-style: solid;
+        border-color: grey;
+    */
+    
+    border-bottom: 1px solid grey;
+}
+
+h1, h2, p {
+    margin-bottom: 20px;
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+#contact-now {
+    background: rgba(0, 0, 0, .6);
+    border: 1px solid white;
+    padding: 0 10px;
+    position: fixed;            /* element is fixed on the screen - non-scroll dependant */
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: .8em;
+    text-decoration: none;
+    z-index: 100;               /* z axis is organized via z-index property (from -9999 to 9999) */
+}
+
+.valores article {
+    width: 50%;
+    float: left;
+    padding: 0 10px;
+    box-sizing: border-box;     /* makes width include both border and padding */
+}
+
+.valores > header {
+    text-align: center
+}
+
+.ventajas article {
+    width: 33.33%;
+    float: left;
+    padding: 0 10px;
+    box-sizing: border-box;   
+}
+
+.clearfix {
+    clear: both
+}

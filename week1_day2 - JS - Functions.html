@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang='es'>
+	<head>
+		<title>JS</title>
+		<meta charset='utf-8'>
+	</head>
+
+	<body>
+
+
+		<h1>JS | Functions & Math methods</h1>
+
+
+		<script>
+
+
+/*
+		// nominal function declaration
+		function logHello() {
+			var text = 'Dummy text';
+			console.log(text);
+		}
+
+		// nominal functions executions 
+		logHello();
+		logHello();
+*/
+
+
+
+
+
+/*
+		// Multiple non-argumented functions declarations & executions
+		function greetMaria(){
+			console.log('¡Buenos días, María Álvarez!');
+		}
+
+		function greetEsteban(){
+			console.log('¡Buenos días, Esteban Gómez!');
+		}
+
+		function greetLaura(){
+			console.log('¡Buenos días, Laura Sánchez!');
+		}
+
+		greetMaria();
+		greetEsteban();
+		greetLaura();
+
+
+
+
+
+
+		// Equivalent code with single argumented function
+		function greet(name, surname){
+			console.log('¡Buenos días, ' + name + ' ' + surname + '!');
+		}
+
+		greet('María', 'Álvarez');
+		greet('Esteban', 'Gómez');
+		greet('Laura', 'Sánchez');
+*/
+
+
+
+
+
+/*
+
+		// callback functions
+
+		function estimatePrice(cost, action){
+
+			var profit = 50
+			var subtotal = cost + profit
+			action(subtotal)
+		}
+
+
+		function applyNormalVAT(subtotal){
+			console.log(subtotal * 1.21)
+		}
+
+		function applyReducedVAT(subtotal){
+			console.log(subtotal * 1.1)
+		}
+
+		function noVATapplied(subtotal){
+			console.log(subtotal)
+		}
+
+		estimatePrice(200, applyNormalVAT)	// adds profit and applies normal VAT
+        estimatePrice(100, noVATapplied)	// adds profit and applies no VAT
+        estimatePrice(2000, applyReducedVAT)// adds profit and applies reduced VAT
+
+*/
+
+
+
+
+
+/*
+		// return value - example 1
+		function greetText(name, surname){
+			return '¡Buenos días, ' + name + ' ' + surname + '!';
+		}
+
+		var result1 = greetText('María', 'Álvarez');
+		var result2 = greetText('Esteban', 'Gómez');
+
+		console.log(result1, result2);
+
+
+
+
+
+
+
+
+
+
+		// return value - example 2
+		function isEven(val){
+
+			if (val % 2 === 0) {
+
+				return true;
+			}
+			else {
+				return false; // unneccessary: non-returning functions return 'undefined'
+			}
+		}
+
+
+		var result1 = isEven(20);
+		var result2 = isEven(35);
+
+		if (result1 === true) { console.log('20 es par') }
+		else { console.log('20 es impar') }
+
+
+		if (result2 === true) { console.log('35 es par') }
+		else { console.log('35 es impar') }
+
+
+
+
+
+
+
+
+
+
+		// return value - example 3 (function execution aborted)
+		function searchWord(val){
+
+			for (var i = 0; i < 1000; i++){
+
+				console.log('Iteración número ' + i);
+
+				if (i === 48) {
+
+					return		// function return means function execution abort, even without returning value
+				}
+			}
+		}
+
+
+		searchWord('Qwerty');
+*/
+
+
+
+
+
+
+
+/*
+		
+		// nominal function vs anonymous function
+		function describeYourself1(){						// nominal
+			console.log('Hi there! Soy nominal.')
+		}
+		describeYourself1()
+
+
+		var describeYourself2 = function(){					// anonimous
+			console.log('Hi there! Soy anónima.')
+		}
+		describeYourself2()
+
+*/
+
+
+
+
+
+/*
+
+
+		// MATH OBJECT'S METHODS
+
+		// Math.floor()
+		console.log(Math.floor(4.2))	// 4
+		console.log(Math.floor(4.9))	// 4
+		console.log(Math.floor(2 - .9))	// 2
+
+
+
+
+
+
+		// Math.random()
+		console.log(Math.random())		// [0-1]
+
+
+
+
+
+		// return random number between 0 and max value
+		function getRandomInt(max) {
+			return Math.floor(Math.random() * Math.floor(max));
+		}
+		console.log(getRandomInt(3));
+		console.log(getRandomInt(5));
+
+
+
+
+
+
+		// return random number between min and max value
+		function getRandomArbitrary(min, max) {
+			return Math.random() * (max - min);
+		}
+
+		console.log(getRandomArbitrary(3, 6));
+
+
+
+
+
+		
+		// return random number between min and max value
+		function getRandomArbitrary(min, max) {
+			return Math.random() * (max - min) + min
+		}
+
+		console.log(getRandomArbitrary(3, 6))
+		console.log(getRandomArbitrary(0, 2))
+
+
+*/
+
+
+
+
+
+
+
+
+/*
+		//variable scope
+		var globalVar = 'Soy global'
+
+		function whatever(){
+			var localVar = 'Soy local'
+			whatever2(localVar)
+		}
+
+		function whatever2(val){
+			console.log(val + ', pero me han enviado como parámetro')
+		}
+
+		console.log(globalVar)
+		//console.log(localVar)		// ops!
+		whatever();
+*/
+
+
+
+		</script>
+
+	</body>
+</html>
